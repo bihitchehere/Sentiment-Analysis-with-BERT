@@ -1,48 +1,48 @@
-📊 Sentiment Analysis with BERT
+ # 📊 Sentiment Analysis with BERT
 
 This repository contains a sentiment analysis pipeline using BERT. The project preprocesses a dataset of tweets, trains a BERT model for sentiment classification, and deploys an interactive web application using Streamlit.
 
-✨ Features
+## ✨ Features
 
-✅ Preprocessing of tweet data
+  ✅ Preprocessing of tweet data
+  
+  🔠 Tokenization using BertTokenizer
+  
+  🏋️ Training a BertForSequenceClassification model
+  
+  🌍 Deployment using Streamlit with Ngrok for remote access
 
-🔠 Tokenization using BertTokenizer
+## 📥 Installation
 
-🏋️ Training a BertForSequenceClassification model
-
-🌍 Deployment using Streamlit with Ngrok for remote access
-
-📥 Installation
-
-Prerequisites
+## Prerequisites
 
 Ensure you have Python installed along with the necessary dependencies:
 
 pip install torch transformers datasets pandas scikit-learn streamlit pyngrok
 
-📂 Dataset Preparation
+## 📂 Dataset Preparation
 
 📌 Place your dataset (file.csv) in the repository.
 
 📑 Ensure the dataset has a tweets column and a labels column with values: neutral, good, bad.
 
-🏋️ Training the Model
+## 🏋️ Training the Model
 
 Run the training script to preprocess data and train the BERT model:
 
 python train.py
 
-This will:
+# This will:
 
-🔄 Load and preprocess the dataset
-
-✂️ Tokenize tweets using BERT tokenizer
-
-🏆 Train a BERT-based sentiment classifier
-
-💾 Save the trained model and tokenizer
-
-🚀 Running the Web Application
+  🔄 Load and preprocess the dataset
+  
+  ✂️ Tokenize tweets using BERT tokenizer
+  
+  🏆 Train a BERT-based sentiment classifier
+  
+  💾 Save the trained model and tokenizer
+  
+  🚀 Running the Web Application
 
 After training, launch the Streamlit app for sentiment analysis:
 
@@ -58,7 +58,7 @@ Ngrok is used to expose the app publicly. The generated public URL will be displ
 
 📊 Click "Analyse" to get the sentiment prediction (Neutral, Good, or Bad).
 
-🙌 Acknowledgments
+# 🙌 Acknowledgments
 
 🤗 Hugging Face Transformers
 
@@ -66,4 +66,4 @@ Ngrok is used to expose the app publicly. The generated public URL will be displ
 
 🎨 Streamlit
 
-📜 License
+
